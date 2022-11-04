@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="25dp"
+    android:paddingHorizontal="30dp"
+    android:background="@color/main"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        android:textColor="@color/second"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/tip"
+        style="@style/horizontal_layout"
+        android:layout_below="@id/title">
+        <TextView
+            style="@style/account_label"
+            android:text="@string/tip_label" />
+        <View
+            style="@style/account_line"/>
+        <EditText
+            android:id="@+id/tip_amount"
+            style="@style/account_amount"
+            android:layout_weight=".5"
+            android:text="@string/number_amount"
+            android:inputType="numberDecimal"
+            tools:ignore="LabelFor" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".165"
+            android:text="@string/percent_symbol"
+            android:textAlignment="textStart"
+            android:textColor="@color/third"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/guests"
+        style="@style/horizontal_layout"
+        android:layout_below="@id/tip">
+        <TextView
+            style="@style/account_label"
+            android:layout_weight="2"
+            android:text="@string/guests_label" />
+        <View
+            style="@style/account_line"/>
+        <EditText
+            android:id="@+id/guests_amount"
+            style="@style/account_amount"
+            android:text="@string/default_guests"
+            android:layout_marginEnd="19.5dp"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guests"
+        android:layout_above="@id/total_account" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/plates"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+            <Button
+                    android:id="@+id/add_plate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_add"
+                    android:textSize="20sp"
+                    android:textColor="@color/second"
+                    android:textAlignment="center"
+                    android:background="@drawable/round_corners"
+                    android:backgroundTint="@color/contrast"
+                    android:layout_marginVertical="20dp"
+                    android:paddingVertical="10dp"
+                    android:layout_below="@id/plates"
+                    android:onClick="addPlates"/>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/total_account"
+        style="@style/horizontal_layout"
+        android:layout_above="@id/total_guests" >
+        <TextView
+            style="@style/total_label"
+            android:text="@string/total_account" />
+        <TextView
+            android:id="@+id/total_account_amount"
+            style="@style/total_amount"
+            android:text="@string/number_amount" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/total_guests"
+        style="@style/horizontal_layout"
+        android:layout_alignParentBottom="true" >
+        <TextView
+            style="@style/total_label"
+            android:text="@string/total_guests" />
+        <TextView
+            android:id="@+id/total_guests_amount"
+            style="@style/total_amount"
+            android:text="@string/number_amount" />
+    </LinearLayout>
+</RelativeLayout>

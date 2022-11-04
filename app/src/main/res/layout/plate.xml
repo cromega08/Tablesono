@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/plate_layout">
+    <EditText
+        style="@style/plate_name"
+        tools:ignore="LabelFor" />
+    <TextView
+        style="@style/plate_symbol"/>
+    <EditText
+        android:id="@+id/plate_amount"
+        style="@style/plate_amount"
+        tools:ignore="LabelFor" />
+    <Button
+        android:id="@+id/remove_plate"
+        style="@style/remove_button" />
+    </RelativeLayout>

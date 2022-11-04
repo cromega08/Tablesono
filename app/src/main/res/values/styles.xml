@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="plate_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingHorizontal">20dp</item>
+        <item name="android:paddingVertical">10dp</item>
+        <item name="android:background">@color/main</item>
+    </style>
+    <style name="plate_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">@string/plate_hint</item>
+        <item name="android:textColorHint">@color/contrast</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/contrast</item>
+        <item name="android:inputType">textShortMessage</item>
+        <item name="android:importantForAutofill">no</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="plate_symbol">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/dollar_symbol</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/third</item>
+        <item name="android:layout_toStartOf">@id/plate_amount</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="plate_amount">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/number_amount</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:textColor">@color/contrast</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:layout_marginHorizontal">10dp</item>
+        <item name="android:layout_toStartOf">@id/remove_plate</item>
+    </style>
+    <style name="remove_button">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/button_remove</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/main</item>
+        <item name="android:background">@drawable/round_corners</item>
+        <item name="android:backgroundTint">@color/contrast</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:onClick">removePlates</item>
+    </style>
+    <style name="horizontal_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginVertical">5dp</item>
+    </style>
+    <style name="account_label">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/third</item>
+    </style>
+    <style name="account_line">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/second</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="account_amount">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">.8</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/contrast</item>
+        <item name="android:inputType">number</item>
+        <item name="android:importantForAutofill">no</item>
+    </style>
+    <style name="total_label">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:textColor">@color/third</item>
+        <item name="android:layout_marginHorizontal">10dp</item>
+    </style>
+    <style name="total_amount">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/contrast</item>
+    </style>
+</resources>

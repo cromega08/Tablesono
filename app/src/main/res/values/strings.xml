@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tip App</string>
+    <string name="percent_symbol">%</string>
+    <string name="tip_label">Tip Percent: </string>
+    <string name="number_amount">00.0</string>
+    <string name="button_add">+ Add Plate</string>
+    <string name="plate_hint">Plate</string>
+    <string name="dollar_symbol">$</string>
+    <string name="button_remove">-</string>
+    <string name="default_total">0</string>
+    <string name="total_account">Total Account: $</string>
+    <string name="guests_label">Number of Guests: </string>
+    <string name="total_guests">Total Per Guest: $</string>
+    <string name="default_guests">1</string>
+</resources>
